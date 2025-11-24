@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parmenas Matara | ZK Engineer & Building Technologist</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Voice Command Indicator -->
+    <div class="voice-indicator" id="voiceIndicator">
+        <i class="fas fa-microphone"></i>
+    </div>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">Parmenas<span>Matara</span>.dev</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div id="particles-js"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1>Building Technologist & <span>ZK Engineer</span></h1>
+                <p class="typing-text">Crafting privacy-preserving systems for the future.</p>
+                <p>I design and build secure, scalable infrastructure with zero-knowledge proofs at the core.</p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn">View Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Hire Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>From Building Technology to Zero-Knowledge Engineering</h3>
+                    <p>My journey began in architectural technology, where I developed a passion for creating robust, efficient systems. This foundation led me to the world of cryptography and zero-knowledge proofs, where I now build privacy-preserving solutions for Web3 and beyond.</p>
+                    <p>I specialize in zk-SNARKs, zk-STARKs, and their applications in decentralized systems, with a focus on making complex cryptographic concepts accessible and practical.</p>
+                    <a href="#" class="btn resume-download-btn" style="margin-top: 20px;">
+    <i class="fas fa-download"></i> Download Latest Resume
+</a>
+                </div>
+                <div class="skills-section">
+                    <h3>Technical Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fab fa-rust"></i>
+                            <p>Rust</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js-square"></i>
+                            <p>JavaScript/TypeScript</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-cube"></i>
+                            <p>Solidity</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-project-diagram"></i>
+                            <p>ZK Circuits</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-node-js"></i>
+                            <p>Node.js</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <p>PostgreSQL</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-ethereum"></i>
+                            <p>Ethereum</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-infinity"></i>
+                            <p>Circom</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image"></div>
+                    <div class="project-content">
+                        <h3>ZK Identity Protocol</h3>
+                        <p>A decentralized identity solution using zero-knowledge proofs for privacy-preserving authentication.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Rust</span>
+                            <span class="project-tag">Circom</span>
+                            <span class="project-tag">ZK-SNARKs</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image"></div>
+                    <div class="project-content">
+                        <h3>Private Voting System</h3>
+                        <p>End-to-end verifiable voting system that preserves voter privacy using cryptographic proofs.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Solidity</span>
+                            <span class="project-tag">ZK-STARKs</span>
+                            <span class="project-tag">React</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image"></div>
+                    <div class="project-content">
+                        <h3>Secure Multi-Party Computation</h3>
+                        <p>Library for privacy-preserving data analysis across multiple parties without exposing raw data.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Rust</span>
+                            <span class="project-tag">MPC</span>
+                            <span class="project-tag">Cryptography</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Docs</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>mataraparmenas@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p> Remote |  Open to Global Projects | Based in Kenya </p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+254 (723) 635-314</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+    <a href="https://github.com/mataraparmenas-arch" class="social-link"><i class="fab fa-github"></i></a>
+    <a href="https://linkedin.com/in/parmenas-matara-804011361" class="social-link"><i class="fab fa-linkedin"></i></a>
+    <a href="https://Twitter.com/MataraParmenas" class="social-link"><i class="fab fa-twitter"></i></a>
+    <a href="https://t.me/Pa Mitto" class="social-link"><i class="fab fa-telegram"></i></a>
+    <a href="https://wa.me/254723635314" class="social-link"><i class="fab fa-whatsapp"></i></a>
+</div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" class="form-control" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <a href="#" class="logo">Parmenas<span>Matara</span>.dev</a>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-discord"></i></a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Parmenas Matara. All rights reserved. | Building the future with zero-knowledge technology.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="js/script.js"></script>
+    <!-- Netlify Identity Widget -->
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script>
+  // Netlify Identity
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
+</body>
+</html>

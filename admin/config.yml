@@ -1,0 +1,99 @@
+backend:
+  name: git-gateway
+  branch: main
+  commit_messages:
+    create: 'Create {{collection}} “{{slug}}”'
+    update: 'Update {{collection}} “{{slug}}”'
+    delete: 'Delete {{collection}} “{{slug}}”'
+    uploadMedia: '[skip ci] Upload “{{path}}”'
+    deleteMedia: '[skip ci] Delete “{{path}}”'
+
+# Media files will be stored in the repo under static/images/uploads
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+# Editor configuration
+editor:
+  preview: false
+
+# Site URL (update with your actual domain)
+site_url: https://yourusername.netlify.app
+display_url: https://yourusername.netlify.app
+
+# Collections
+collections:
+  # Projects Collection
+  - name: "projects"
+    label: "Projects"
+    folder: "content/projects"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Full Content", name: "body", widget: "markdown" }
+      - { label: "Tech Stack", name: "tech_stack", widget: "list", default: ["JavaScript"] }
+      - { label: "Project URL", name: "project_url", widget: "string", required: false }
+      - { label: "GitHub URL", name: "github_url", widget: "string", required: false }
+      - { label: "Featured Image", name: "thumbnail", widget: "image", required: false }
+      - { label: "Featured", name: "featured", widget: "boolean", default: false }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Tags", name: "tags", widget: "list", default: ["web"] }
+
+  # Blog Posts Collection
+  - name: "blog"
+    label: "Blog Posts"
+    folder: "content/blog"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Tags", name: "tags", widget: "list" }
+      - { label: "Featured Image", name: "thumbnail", widget: "image", required: false }
+      - { label: "Author", name: "author", widget: "string", default: "Alex Chen" }
+
+  # Skills Collection
+  - name: "skills"
+    label: "Skills"
+    folder: "content/skills"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Skill Name", name: "name", widget: "string" }
+      - { label: "Icon Class", name: "icon", widget: "string" }
+      - { label: "Category", name: "category", widget: "select", options: ["Frontend", "Backend", "ZK Tech", "Blockchain", "Tools"] }
+      - { label: "Proficiency", name: "proficiency", widget: "number", value_type: "int", min: 1, max: 100 }
+
+  # Site Settings
+  - name: "settings"
+    label: "Site Settings"
+    files:
+      - file: "content/settings/global.md"
+        label: "Global Settings"
+        name: "global"
+        fields:
+          - { label: "Site Title", name: "title", widget: "string" }
+          - { label: "Site Description", name: "description", widget: "text" }
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "Location", name: "location", widget: "string" }
+          - { label: "Phone", name: "phone", widget: "string" }
+          - { label: "GitHub URL", name: "github_url", widget: "string" }
+          - { label: "LinkedIn URL", name: "linkedin_url", widget: "string" }
+          - { label: "Twitter URL", name: "twitter_url", widget: "string" }
+            # Resume Configuration
+  - name: "resume"
+    label: "Resume"
+    folder: "content/resume"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Resume File", name: "resume_file", widget: "file", required: true }
+      - { label: "Resume Version", name: "version", widget: "string", default: "1.0" }
+      - label: "Last Updated"
+        name: "last_updated"
+        widget: "datetime"
+        default: ""
+        format: "YYYY-MM-DD HH:mm"
