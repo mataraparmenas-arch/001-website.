@@ -17,8 +17,8 @@ editor:
   preview: false
 
 # Site URL (update with your actual domain)
-site_url: https://yourusername.netlify.app
-display_url: https://yourusername.netlify.app
+site_url: https://parmyy.netlify.app
+display_url: https://parmyy.netlify.app
 
 # Collections
 collections:
@@ -96,4 +96,5 @@ collections:
         name: "last_updated"
         widget: "datetime"
         default: ""
+
         format: "YYYY-MM-DD HH:mm"
